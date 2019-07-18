@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+    <title>ManushLagbe | Login</title>
+  </head>
+  <body>
+    
+
+  <form action="index.html" class="login-form">
+      <div class="container">
+        
+        <h5 style="margin-bottom: 20px; text-align: center;"> <span style="color: #1c82c7">Sign In</span> with your social account</h5>
+        <div class="row justify-content-center">  
+          <div class="col-sm">
+            <button type="button" class="btn btn-primary btn-lg"><i class="fab fa-facebook-square"></i> Facebook</button> 
+          </div>
+
+          <div class="col-sm">
+            <button type="button" class="btn btn-danger btn-lg"><i class="fab fa-google-plus-square"></i> Google</button> 
+          </div>
+        </div>
+      
+
+        <div class="head">
+          <div class="row">
+            <hr> <span style="margin: 5px">OR</span> <hr>
+          </div>
+        </div>
+
+
+        <h5 style="text-align: center;"> <span style="color: #1c82c7; ">Sign In</span> with your username</h5> 
+      </div>
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="Username"></span>
+        </div>
+
+        <div class="txtb">
+          <input type="password">
+          <span data-placeholder="Password"></span>
+        </div>
+
+        <input type="submit" class="logbtn" value="Login">
+
+        <div class="bottom-text">
+          Don't have account? <a href="#">Sign up</a>
+        </div>
+
+   </form>
+    
+
+
+  <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+   </script>
+
+  
+  </body>
+</html>
